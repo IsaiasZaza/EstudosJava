@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 8px;
+    align-items: center;
+    color: #202020;
+}
+.logo{
+    font-weight: 800;
+    font-size: 30px;
+}   
+.nav-itens{
+    list-style: none;
+    display: flex;
+}
+.nav-itens li a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: #202020;
+}
+#barra{
+    border: 2px solid red;
+}
+/*muito a editar*/
+
