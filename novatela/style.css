@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    background-color: #88DB8F;
+    align-items: center;
+    height: 50px;
+}
+
+#nome {
+    font-family: 'Open Sans';
+    font-size: 25px;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+}
+
+#contato {
+    margin-right: 40px;
+    border: none;
+    border-radius: 8px;
+    width: 96px;
+    height: 29px;
+    text-align: center;
+
+}
+
+#contato:hover {
+    background-color: green;
+    transition: 2s background;
+    cursor: pointer;
+}
+
+#telefone {
+    margin-right: 7px;
+}
+
+#usuario {
+    display: flex;
+    margin: 40px;
+    justify-content: flex-start;
+    width: 800px;
+}
+
+#fotoUsuario {
+    width: 240px;
+    border-radius: 50%;
+    margin-right: 100px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#infoUsuario p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans';
+    width: 70%;
+
+}
+
+#infoUsuario {
+    background-color: #88DB8F;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    background-color: FFFFFF;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin: 15px auto;
+    padding: 10px;
+    background-color: #88DB8F;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#caixaOne,
+#caixaTwo,
+#caixaThree {
+    width: 230px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+
+}
+
+#caixaOne .text,
+#caixaTwo .text,
+#caixaThree .text {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    top: 99%;
+    font-size: 2.2vh;
+    transition: .4s ease-in-out;
+    padding: px 20px;
+    font-weight: bold;
+}
+#caixaOne .text, #caixaTwo .text, #caixaThree .text{
+    top: 97%;
+}
+
+#caixaOne:hover .text,
+#caixaTwo:hover .text,
+#caixaThree:hover .text {
+    transform: translateY(-100%);
+}
+
+#caixaOne .text p,
+#caixaTwo,
+#caixaThree {
+    color: black;
+    letter-spacing: 1px;
+}
+
+#caixaOne .text::after,
+#caixaThree .text::after,
+#caixaTwo .text::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#caixaOne::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 252, 252, 0.537);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#caixaTwo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 252, 252, 0.537);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+#caixaThree::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 252, 252, 0.537);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#caixaOne {
+    background-image: url(https://img.freepik.com/fotos-gratis/villa-com-piscina-de-luxo-espetacular-design-contemporaneo-arte-digital-imoveis-casa-casa-e-propriedade-ge_1258-150749.jpg?w=1380&t=st=1686272758~exp=1686273358~hmac=9b7d76061318576293888596c66434be010dc811c8da966125ae8154c3d2f04d);
+    background-position: center, center;
+    background-size: cover;
+}
+
+#caixaTwo {
+    background-image: url(https://img.freepik.com/fotos-gratis/casa-isolada-no-campo_1303-23773.jpg?w=1380&t=st=1686272925~exp=1686273525~hmac=bcd54109211630ff201c94e2dbf66b244d41c943040e97e1c569ced406877979);
+    background-position: center, center;
+    background-size: cover;
+}
+
+#caixaThree {
+    background-image: url(https://img.freepik.com/fotos-gratis/guindastes-em-um-canteiro-de-obras_53876-145039.jpg?w=1380&t=st=1686266910~exp=1686267510~hmac=d14a530bd6c36d7cab0d4a69118b2a62082cc72de10d9c01b769bc31a7f9144f);
+    background-position: center, center;
+    background-size: cover;
+}
+
+#caixaThree:hover:before, #caixaTwo:hover:before, #caixaOne:hover:before {
+    opacity: 1;
+}
+
+#caixaOne:hover,
+#caixaTwo:hover,
+#caixaThree:hover {
+    opacity: 20% background;
+    background-color: rgba(255, 0, 0, 0.5);
+}
