@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -11,21 +12,141 @@ nav {
     align-items: center;
     color: #202020;
 }
-.logo{
+
+.logo {
     font-weight: 800;
     font-size: 30px;
-}   
-.nav-itens{
+}
+
+.nav-itens {
     list-style: none;
     display: flex;
 }
+
 .nav-itens li a {
     padding-left: 20px;
     text-decoration: none;
     color: #202020;
 }
-#barra{
+
+#barra {
     border: 2px solid red;
 }
-/*muito a editar*/
 
+button {
+    text-decoration: none;
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: 1.5s background;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+
+button:hover {
+    background-color: red;
+    transition: 1.5s background;
+}
+
+#container {
+    margin: 10px auto;
+    background-color: white
+    
+}
+
+.perfil {
+    display: flex;
+
+}
+
+.bio p {
+    width: 50%;
+}
+
+.container-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 800px;
+    margin: 15px auto;
+    background-color: rgb(241, 241, 241)
+}
+
+.box {
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;  
+    background-position: center, center;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(241, 241, 241);
+    margin: 10px;
+}
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/vetores-premium/trabalhador-da-construcao-civil-bonito-engenheiro-segurando-a-pa-e-a-ilustracao-do-icone-dos-desenhos-animados-de-cimento-projeto-isolado-estilo-cartoon-plana_422763-779.jpg?w=826);
+    background-position: center, center;
+    opacity: 10%;
+    z-index: -1;
+  }
+.box h2 {
+    text-transform: uppercase;
+    color: red;
+    z-index: 1;
+}
+.box:hover{
+    transition: 0.5s background;
+    background-color: rgba(0, 0, 0, 0.358);
+    
+}
+.box .text {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    top: 100%;
+    transition: .4s ease-in-out;
+    padding: 70px 20px;
+   
+}
+
+.box .text::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.202);*/
+}
+
+.box:hover .text {
+    transform: translateY(-100%);
+}
+
+.box .text p {
+    color: blue;
+    letter-spacing: 1px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}

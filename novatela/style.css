@@ -68,7 +68,7 @@
 }
 
 #infoUsuario {
-    background-color: #88DB8F;
+    background-color: #88db8f46;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px black;
@@ -89,7 +89,7 @@
     max-width: 800px;
     margin: 15px auto;
     padding: 10px;
-    background-color: #88DB8F;
+    background-color: #88db8f58;
     border-radius: 8px;
     box-shadow: 2px 2px 2px black;
 }
@@ -105,7 +105,11 @@
     position: relative;
     overflow: hidden;
     z-index: 2;
-
+}
+h3{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #caixaOne .text,
