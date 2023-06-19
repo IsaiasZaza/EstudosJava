@@ -1,19 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <title>Desafio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal</title>
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
     <header>
         <nav id="cabecalho">
-            <img id="logo" src="https://cdn-icons-png.flaticon.com/512/16/16443.png?w=826&t=st=1686274623~exp=1686275223~hmac=43a85e078a0202166cfcc9e9a2e4152e8fb245fef55679704c99cca8a431fdf8" alt="">
-            <h2 id="nome">Lucas Mendes</h2>
-            <button id="contato"><span id="telefone">&#128222</span>Contato</button>
+            <img id="logo"
+                src="https://cdn-icons-png.flaticon.com/512/16/16443.png?w=826&t=st=1686274623~exp=1686275223~hmac=43a85e078a0202166cfcc9e9a2e4152e8fb245fef55679704c99cca8a431fdf8"
+                alt="">
+            <h1 id="nomeCompleto">Ivanildo Gomes</h1>
+            <button class="btn" type="submit" id="modal-lan">Agendar</button>
         </nav>
     </header>
     <main>
@@ -26,22 +29,27 @@
                     é um corretor de imóveis experiente e respeitado, com mais de 15 anos de atuação no
                     mercado imobiliário. Ele possui formação em Engenharia Civil, o que lhe confere um conhecimento
                     técnico aprofundado sobre construção e estrutura dos imóveis.
-                    Além disso, <br><br>Lucas é um excelente comunicador e possui grande capacidade de negociação. Ele
+                    <br><br>Lucas é um excelente comunicador e possui grande capacidade de negociação. Ele
                     entende a
                     importância de estabelecer um relacionamento de confiança com seus clientes e está sempre disponível
                     para responder perguntas, fornecer informações adicionais e oferecer suporte durante todo o processo
-                    de compra ou venda de imóveis</p>
+                    de compra ou venda de imóveis
+                </p>
             </div>
         </div>
         <div class="teste">
+            <div class="projetos">
+                <h2>Projetos</h2>
+            </div>
             <div class="content">
                 <div id="caixaOne">
                     <div class="text">
                         <h3>Casa Winchester</h3>
                         <p>"Encantadora casa à venda! Esta linda residência combina elegância e conforto, oferecendo o
                             ambiente perfeito para você e sua família. Com um design moderno e acabamentos de alta
-                            qualidade, esta casa é um verdadeiro tesouro..</p>
+                            qualidade.</p>
                     </div>
+
                 </div>
                 <div id="caixaTwo">
                     <div class="text">
@@ -49,7 +57,7 @@
                         <p>"Excelente oportunidade! Apresentamos a você uma casa dos sonhos, pronta para receber você e
                             sua família. Localizada em um bairro tranquilo e valorizado, esta casa oferece conforto,
                             praticidade e um estilo de vida único.</p>
-                    </div class="text">
+                    </div>
 
 
                 </div>
@@ -63,7 +71,20 @@
                 </div>
             </div>
         </div>
-
+        <div id="conteiner-modal">
+            <div id="modal">
+                <h5>Agendamento</h5>
+                <form action="">
+                    <input type="text" name="" id="nome" placeholder="Nome">
+                    <input type="tel" name="" id="depois" placeholder="telefone" maxlength="14">
+                    <input type="e-mail" name="" id="email" placeholder="email">
+                    <p>Para quando deseja agendar?</p>
+                    <input type="date" name="" id="date" placeholder="data">
+                    <button class="btn2" type="submit" id="ocultar-modal">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
 
 
 
@@ -72,8 +93,6 @@
 
 
     </footer>
-
-
 </body>
 
 </html>

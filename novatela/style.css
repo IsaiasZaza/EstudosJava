@@ -1,11 +1,9 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-
-#cabecalho {
+    #cabecalho {
     display: flex;
     justify-content: space-between;
     background-color: #88DB8F;
@@ -13,7 +11,7 @@
     height: 50px;
 }
 
-#nome {
+#nomeCompleto {
     font-family: 'Open Sans';
     font-size: 25px;
 }
@@ -64,14 +62,13 @@
     align-items: center;
     font-family: 'Open Sans';
     width: 70%;
-
 }
 
 #infoUsuario {
-    background-color: #88db8f46;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 3px 3px 3px black;
+    font-size: 2.2vh;
 }
 
 #container {
@@ -81,19 +78,20 @@
     align-items: center;
     justify-content: space-around;
 }
-
+.teste{
+    background-color: #88db8fd7;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px black;
+    margin: 15px auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 10px;
+}
 .content {
     display: flex;
     justify-content: space-around;
-    width: 100%;
-    max-width: 800px;
-    margin: 15px auto;
     padding: 10px;
-    background-color: #88db8f58;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px black;
 }
-
 #caixaOne,
 #caixaTwo,
 #caixaThree {
@@ -106,10 +104,19 @@
     overflow: hidden;
     z-index: 2;
 }
+h2{
+    color: white;
+}
 h3{
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 20px;
+    width: 100%;
+    cursor: default;
+    position: relative;
+}
+h3:hover{
+    color: #88DB8F;
 }
 
 #caixaOne .text,
@@ -120,26 +127,27 @@ h3{
     position: relative;
     z-index: 2;
     top: 99%;
-    font-size: 2.2vh;
+    font-size: 15px;
     transition: .4s ease-in-out;
     padding: px 20px;
     font-weight: bold;
 }
 #caixaOne .text, #caixaTwo .text, #caixaThree .text{
-    top: 97%;
+    top: 97.5%;
 }
 
 #caixaOne:hover .text,
 #caixaTwo:hover .text,
-#caixaThree:hover .text {
+#caixaThree:hover .text{
     transform: translateY(-100%);
+    cursor: default;
 }
 
 #caixaOne .text p,
-#caixaTwo,
-#caixaThree {
+#caixaTwo .text p,
+#caixaThree .text p {
     color: black;
-    letter-spacing: 1px;
+    width: 100%;
 }
 
 #caixaOne .text::after,
@@ -150,7 +158,6 @@ h3{
     top: 0;
     left: 0;
 }
-
 #caixaOne::before {
     content: " ";
     position: absolute;
@@ -161,8 +168,8 @@ h3{
     background-color: rgba(255, 252, 252, 0.537);
     opacity: 0;
     transition: opacity 0.3s ease;
+    
 }
-
 #caixaTwo::before {
     content: '';
     position: absolute;
@@ -213,4 +220,141 @@ h3{
 #caixaThree:hover {
     opacity: 20% background;
     background-color: rgba(255, 0, 0, 0.5);
+}
+.projetos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#conteiner-md{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+#conteiner-md p {
+    margin: 30px 0;
+    font-size: 2.5em;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 7px 15px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    border: none;
+    color: black;
+    transition: all 0.5s;
+    margin-right: 40px;
+    width: 96px;
+    height: 29px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #acffb3;
+}
+.btn2:hover{
+    background-color: green;
+    font-size: 18px;
+}
+.btn2{
+    position: relative;
+    left: 38%;
+    padding: 7px 15px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    border: none;
+    color: black;
+    transition: all 0.5s;
+    width: 96px;
+    height: 29px;
+    cursor: pointer;
+}
+#conteiner-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#conteiner-modal.mostrar{
+    background-color: green;
+    z-index: 2;
+    opacity: 0.9;
+    width: 510px;
+    height: 505px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+h5{
+    background-color: #FFFFFF;
+    font-size: 3.3vh;
+    margin: 35px auto;
+    border-radius: 8px;
+    padding: 7px 15px;
+    position: relative;
+}
+#conteiner-modal #modal{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#date{
+    width: 50%;
+    position: relative;
+    right: 24.9%;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form input{
+    margin: 15px;
+    padding: 10px;
+    width: 100%;
+}
+form p{
+    font-size: 2.2vh;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    margin: 0px auto;
+    border-radius: 8px;
+    padding: 7px 15px;
+    position: relative;
+}
+@media screen and (max-width: 768px){
+    #fotoUsuario, #infoUsuario, #usuario{
+    width: 100%;
+    flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px){
+    nav, #cabecalho{
+        width: 100%;
+    }
+    #logo{
+        width: 10%;
+    }
+    #nomeCompleto{
+        font-size: 15px;
+    }
+    #modal-lan{
+    width: 10px;
+    }
 }
