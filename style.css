@@ -134,6 +134,7 @@
 #caixaThree .text p {
     color: black;
     width: 100%;
+    font-size: 1.7vh;
 }
 
 #caixaOne .text::after,
