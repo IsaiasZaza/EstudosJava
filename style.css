@@ -39,7 +39,7 @@
     display: flex;
     margin: 40px;
     justify-content: flex-start;
-    width: 800px;
+    width: 1300px;
 }
 #fotoUsuario {
     width: 240px;
@@ -75,7 +75,7 @@
     border-radius: 8px;
     box-shadow: 2px 2px 2px black;
     margin: 5px auto;
-    max-width: 800px;
+    max-width: 1300px;
     width: 100%;
     padding: 10px;
 }
@@ -426,9 +426,7 @@ footer img{
         text-align: center;
     }
 }
-@media screen and (max-width: 1024px) {
 
-}
 @media screen and (max-width: 1024px) {
     header,
     nav,
