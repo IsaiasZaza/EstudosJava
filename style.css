@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 #cabecalho {
     display: flex;
     justify-content: space-between;
@@ -11,18 +10,15 @@
     align-items: center;
     height: 50px;
 }
-
 #nomeCompleto {
     font-family: 'Open Sans';
     font-size: 25px;
 }
-
 #logo {
     width: 40px;
     height: 40px;
     margin-left: 40px;
 }
-
 #contato {
     margin-right: 40px;
     border: none;
@@ -30,41 +26,27 @@
     width: 96px;
     height: 29px;
     text-align: center;
-
 }
-
 #contato:hover {
     background-color: green;
     transition: 2s background;
     cursor: pointer;
 }
-
 #telefone {
     margin-right: 7px;
 }
-
 #usuario {
     display: flex;
     margin: 40px;
     justify-content: flex-start;
     width: 800px;
 }
-
 #fotoUsuario {
     width: 240px;
     border-radius: 50%;
     margin-right: 100px;
     box-shadow: 2px 2px 2px black;
 }
-
-#infoUsuario p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Open Sans';
-    width: 70%;
-}
-
 #infoUsuario {
     padding: 10px;
     border-radius: 10px;
@@ -72,7 +54,13 @@
     font-size: 2.3vh;
     cursor: default;
 }
-
+#infoUsuario p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans';
+    width: 70%;
+}
 #container {
     display: flex;
     flex-direction: column;
@@ -81,7 +69,8 @@
     justify-content: space-around;
 }
 
-.teste {
+/*Inicio BoxProjetos*/
+.containerPai {
     background-color: #88db8fd7;
     border-radius: 8px;
     box-shadow: 2px 2px 2px black;
@@ -90,13 +79,17 @@
     width: 100%;
     padding: 10px;
 }
-
 .content {
     display: flex;
     justify-content: space-around;
     padding: 5px;
 }
-
+.projetos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: default;
+}
 #caixaOne,
 #caixaTwo,
 #caixaThree {
@@ -109,24 +102,6 @@
     overflow: hidden;
     z-index: 2;
 }
-
-h2 {
-    color: white;
-}
-
-h3 {
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    width: 100%;
-    cursor: default;
-    position: relative;
-}
-
-h3:hover {
-    color: #88DB8F;
-}
-
 #caixaOne .text,
 #caixaTwo .text,
 #caixaThree .text {
@@ -237,25 +212,20 @@ h3:hover {
     opacity: 20% background;
     background-color: rgba(255, 0, 0, 0.5);
 }
-
-.projetos {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    cursor: default;
+h2 {
+    color: white;
 }
-
-#conteiner-md {
+h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
     width: 100%;
-    height: 100px;
-    text-align: center;
+    cursor: default;
+    position: relative;
 }
-
-#conteiner-md p {
-    margin: 30px 0;
-    font-size: 2.5em;
+h3:hover {
+    color: #88DB8F;
 }
-
 .btn {
     display: flex;
     justify-content: center;
@@ -271,30 +241,11 @@ h3:hover {
     height: 29px;
     cursor: pointer;
 }
-
 .btn:hover {
     background-color: #acffb3;
 }
-
-.btn2:hover {
-    background-color: green;
-    font-size: 18px;
-}
-
-.btn2 {
-    position: relative;
-    left: 38%;
-    padding: 7px 15px;
-    border-radius: 8px;
-    background-color: #FFFFFF;
-    border: none;
-    color: black;
-    transition: all 0.5s;
-    width: 96px;
-    height: 29px;
-    cursor: pointer;
-}
-
+/*Fim BoxProjetos*/
+/*Modal*/
 #conteiner-modal {
     position: fixed;
     top: 0;
@@ -309,7 +260,6 @@ h3:hover {
     justify-content: center;
     align-items: center;
 }
-
 #conteiner-modal.mostrar {
     background-color: #6db072;
     z-index: 2;
@@ -322,7 +272,6 @@ h3:hover {
     transform: translate(-50%, -50%);
     border-radius: 10px;
 }
-
 h5 {
     background-color: #FFFFFF;
     font-size: 3.3vh;
@@ -331,7 +280,6 @@ h5 {
     padding: 7px 15px;
     position: relative;
 }
-
 #conteiner-modal #modal {
     width: 70%;
     margin: 0 auto;
@@ -339,13 +287,29 @@ h5 {
     flex-direction: column;
     justify-content: center;
 }
-
 #date {
     width: 50%;
     position: relative;
     right: 24.9%;
 }
-
+.btn2 {
+    position: relative;
+    left: 38%;
+    padding: 7px 15px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    border: none;
+    color: black;
+    transition: all 0.5s;
+    width: 96px;
+    height: 29px;
+    cursor: pointer;
+}
+.btn2:hover {
+    background-color: green;
+    font-size: 18px;
+}
+/* inicio Formulario do modal */
 form {
     width: 100%;
     display: flex;
@@ -353,7 +317,6 @@ form {
     justify-content: center;
     align-items: center;
 }
-
 form input {
     margin: 15px;
     padding: 10px;
@@ -371,6 +334,7 @@ form p {
     padding: 7px 15px;
     position: relative;
 }
+/* Fim Formulario do modal */
 
 footer {
     background: #333;
@@ -385,6 +349,9 @@ footer img{
     width: 30px;
     margin: 2px
 }
+
+/*Responsividade*/
+
 @media screen and (max-width: 1200px) {
     header,
     nav,
@@ -609,8 +576,11 @@ footer img{
         margin: 5px;
         width: 100%;
     }
+    h3{
+        font-size: 2.2vh;
+    }
     .text p{
-        font-size: 90%;
+        font-size: 100%;
     }
 
 
